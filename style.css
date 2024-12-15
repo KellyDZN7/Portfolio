@@ -22,7 +22,7 @@ body {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background-image: url('https://placehold.co/50x50');
+  background-image: url('img/KellyLogoV3.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -147,4 +147,15 @@ p {
   text-decoration: none;
   font-size: 0.8em;
   box-shadow: 0 2px 4px rgba(255, 0, 131, 0.2);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
 }
